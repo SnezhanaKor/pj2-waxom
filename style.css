@@ -66,7 +66,6 @@
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-weight: 500;
-    width: auto;
 }
 
 /*header*/
@@ -93,12 +92,13 @@ body {
     width: 1275px;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .header-heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 315px;
+    margin-bottom: 250px;
 }
 
 .logo {
@@ -209,7 +209,8 @@ a {
     line-height: 16px;
     color: #FFFFFF;
     border: none;
-    margin-bottom: 312px;
+    margin-bottom: 300px;
+    display: inline-block;
 }
 
 .header-slider-ellipse {
@@ -345,7 +346,7 @@ ul {
 .waxom-is-realization {
     padding-top: 80px;
     padding-bottom: 0;
-    background-color: #E5E5E5;
+    background-color: #FBFAF8;
 }
 
 .waxom-is-realization-contain {
@@ -437,6 +438,7 @@ ul {
     background: #988574;
     border-radius: 3px;
     border: none;
+    display: inline-block;
 }
 
 /*our-latest-project*/
@@ -589,4 +591,277 @@ ul {
     background: #988574;
     border-radius: 3px;
     border: none;
+    display: inline-block;
+}
+
+/*video-presentation*/
+.video-presentation {
+    background-image: url(img/bg-video-presentation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-presentation-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 248px;
+    padding-bottom: 195px;
+    margin: 0 auto;
+
+}
+
+.video-presentation-icon {
+    margin-bottom: 31px;
+}
+
+.video-presentation-heading {
+    margin-bottom: 18px;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.video-presentation-text {
+    margin-bottom: 18px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 570px;
+    text-align: center;
+}
+
+.video-presentation-time {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C7B299;
+}
+
+/*mobile-devices*/
+.mobile-devices {
+    background-color: #FBFAF8;
+    ;
+}
+
+.mobile-devices-contain {
+    width: 1160px;
+    display: flex;
+    padding-top: 78px;
+    margin: 0 auto;
+}
+
+.mobile-devices-img {
+    margin-right: 64px;
+}
+
+.mobile-devices-heading {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.mobile-devices-text {
+    width: 670px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8C8C8C;
+    margin-bottom: 49px;
+}
+
+.mobile-devices-list {
+    width: 578px;
+
+    margin-left: 65px;
+}
+
+.mobile-devices-list-style {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8C8C8C;
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.mobile-devices-list-style::before {
+    content: url(img/circle-arrow.png);
+    margin-right: 8px;
+}
+
+.mobile-devices-content {
+    margin-top: 107px;
+}
+
+/*counters*/
+.counters {
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.counters-contain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counters-svg {
+    fill: none;
+}
+
+.counters-svg-style {
+    fill: #C7B299;
+}
+
+.counters-line {
+    fill: none;
+}
+
+.counters-line-style {
+    fill: white;
+}
+
+.counters-count {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.counters-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C7B299;
+}
+
+.counters-card {
+    padding-right: 70px;
+}
+
+/*recent-posts*/
+.recent-posts {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 38px;
+}
+
+.recent-posts-contain {
+    width: 1278px;
+    margin: 0 auto;
+}
+
+.recent-posts-heading {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.recent-posts-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.recent-posts-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #8C8C8C;
+    margin-bottom: 30px;
+    width: 770px;
+}
+
+.recent-posts-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-posts-card-img {
+    position: relative;
+}
+
+.recent-posts-card-img-svg {
+    position: absolute;
+    top: 17px;
+    left: 23px;
+}
+
+.recent-posts-card {
+    border: 1px solid #B3B3B3;
+    box-sizing: border-box;
+    margin-right: 80px;
+    margin-bottom: 54px;
+}
+
+.recent-posts-card-main {
+    padding: 31px 36px 23px 23px;
+}
+
+.recent-posts-card-heading {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #555555;
+    margin-bottom: 22px;
+}
+
+.recent-posts-card-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.recent-posts-card-link-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C7B299;
+}
+
+.recent-posts-bottom-svg-style {
+    fill: #D1D1D1;
+}
+
+.recent-posts-bottom-svg-style:hover {
+    fill: #C7B299;
+}
+
+.recent-posts-bottom {
+    display: flex;
+    justify-content: center;
+
+}
+
+.recent-posts-bottom-svg {
+    padding-right: 20px;
 }
