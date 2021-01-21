@@ -74,13 +74,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 39px;
-    padding-bottom: 49px;
+    padding: 39px 161px 49px 161px;
 }
 
 .header-contain-with-slider {
     display: flex;
-    width: 1600px;
     margin: 0 auto;
     align-items: center;
     flex-wrap: nowrap;
@@ -89,10 +87,10 @@ body {
 
 .header-contain {
     display: flex;
-    width: 1275px;
     flex-wrap: nowrap;
     flex-direction: column;
     margin: 0 auto;
+    width: 100%;
 }
 
 .header-heading {
@@ -103,6 +101,7 @@ body {
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo-text {
@@ -864,4 +863,213 @@ ul {
 
 .recent-posts-bottom-svg {
     padding-right: 20px;
+}
+
+/*partners*/
+.partners {
+    background-image: url(img/bg-partners.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.partners-contain {
+    width: 1065px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*footer*/
+.footer-top {
+    background-color: #191919;
+    padding-top: 74px;
+    padding-bottom: 128px;
+}
+
+.footer-bottom {
+    background-color: #101010;
+    padding-top: 58px;
+    padding-bottom: 41px;
+}
+
+.footer-contain-top {
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contain-bottom {
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-top {
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top-about-us {
+    width: 25%;
+    margin-right: 72px;
+}
+
+.footer-top-about-us-logo {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.footer-top-about-us-logo-heading {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    margin-left: 11px;
+}
+
+.footer-top-recent-posts {
+    margin-right: 49px;
+    width: 25%;
+}
+
+.footer-top-twitter {
+    margin-right: 48px;
+    width: 25%;
+}
+
+.footer-top-widget {
+    width: 25%;
+}
+
+.footer-top-about-us-main-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+.footer-top-about-us-link-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D1D1D1;
+    margin-right: 7px;
+}
+
+.footer-top-recent-posts-heading,
+.footer-top-twitter-heading,
+.footer-top-widget-heading {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+    margin-top: 33px;
+}
+
+.footer-top-recent-posts-date {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #363636;
+    margin-bottom: 6px;
+    width: 206px;
+}
+
+.footer-top-recent-posts-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    width: 206px;
+    margin-bottom: 16px;
+}
+
+.footer-top-recent-posts-main-line {
+    background-color: #242424;
+    height: 1px;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.footer-top-twitter-text {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+.footer-top-twitter-text-style {
+    color: #00BFF3;
+}
+
+.footer-top-twitter-time {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #363636;
+    margin-bottom: 16px;
+}
+
+.footer-top-twitter-main-line {
+    background-color: #242424;
+    height: 1px;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.footer-top-twitter-text-style-third {
+    color: #757575;
+}
+
+.footer-top-widget-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-top-widget-img-style {
+    margin: 0 5px 5px 0;
+}
+
+.footer-bottom-card-copy-text,
+.footer-bottom-card-link-style {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+}
+
+.footer-bottom-card-copy,
+.footer-bottom-card-link {
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.footer-bottom-card-line {
+    background-color: #1A1A1A;
+    border: none;
+    width: 1px;
+    margin-right: 11px;
 }
