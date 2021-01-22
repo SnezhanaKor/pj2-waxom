@@ -135,6 +135,7 @@ body {
     color: #FFFFFF;
     list-style-type: none;
     padding-right: 24px;
+    transition-delay: 0.1s;
 }
 
 .nav-links-style:hover {
@@ -158,6 +159,7 @@ a {
 .icon-cart-svg,
 .icon-search-svg {
     fill: white;
+    transition-delay: 0.1s;
 }
 
 .icon-cart-svg:hover,
@@ -210,6 +212,47 @@ a {
     border: none;
     margin-bottom: 300px;
     display: inline-block;
+    transition-delay: 0.3s;
+}
+
+.slogan-style-button:hover {
+    animation: button-animation 1.5s both;
+}
+
+@keyframes button-animation {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
 }
 
 .header-slider-ellipse {
@@ -220,30 +263,32 @@ a {
 
 .header-slider-ellipse-style {
     padding-right: 7px;
-}
-
-.header-slider-ellipse-style {
+    transition-delay: 0.1s;
     fill: none;
 }
 
 .header-slider-circle-style {
     fill: white;
     fill-opacity: 0.5;
+    box-sizing: border-box;
 }
 
-.header-slider-circle-style:hover {
+.header-slider-ellipse-style:hover {
+    transform: scale(1.25);
     stroke: #D3C1AD;
     stroke-width: 1px;
+}
+
+.header-slider-ellipse-style:hover .header-slider-circle-style {
     fill: none;
 }
 
+
 .slider-left {
-    margin-right: 122px;
     fill: none;
 }
 
 .slider-right {
-    margin-left: 122px;
     fill: none;
 }
 
@@ -253,13 +298,13 @@ a {
     opacity: 0.502;
 }
 
-.slider-right-style:hover,
-.slider-left-style:hover {
+.slider-right:hover .slider-right-style,
+.slider-left:hover .slider-left-style {
     fill: #D3C1AC;
 }
 
-.slider-right-style:focus,
-.slider-left-style:hover {
+.slider-right:focus .slider-right-style,
+.slider-left:focus .slider-left-style {
     fill: #D3C1AC;
 }
 
@@ -287,7 +332,21 @@ ul {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    transition: 0.3s;
 }
+
+.services-card:hover .services-card-figure-style,
+.services-card:hover .services-card-line-style,
+.services-card:hover .services-card-heading {
+    fill: #C7B299;
+    color: #C7B299;
+
+}
+
+.services-card:hover .services-card-figure {
+    transform: rotate(45deg);
+}
+
 
 .services-card-figure {
     fill: none;
@@ -302,20 +361,12 @@ ul {
     fill: #555555;
 }
 
-.services-card-figure-style:hover {
-    fill: #C7B299;
-}
-
 .services-card-line {
     fill: none;
 }
 
 .services-card-line-style {
     fill: #F1EEE9;
-}
-
-.services-card-line-style:hover {
-    fill: #C7B299;
 }
 
 .services-card-heading {
@@ -325,10 +376,6 @@ ul {
     line-height: 26px;
     color: #555555;
     margin-bottom: 20px;
-}
-
-.services-card-heading:hover {
-    color: #C7B299;
 }
 
 .services-card-text {
@@ -438,6 +485,11 @@ ul {
     border-radius: 3px;
     border: none;
     display: inline-block;
+    transition-delay: 0.3s;
+}
+
+.purchase-now-button:hover {
+    animation: button-animation 1.5s both;
 }
 
 /*our-latest-project*/
@@ -500,6 +552,7 @@ ul {
     padding: 7px 17px;
     margin-right: 10px;
     margin-bottom: 69px;
+    transition-delay: 0.1s;
 }
 
 .our-latest-project-style:hover {
@@ -516,17 +569,35 @@ ul {
 
 .our-latest-project-card {
     margin-bottom: 69px;
+    transition: 0.3s;
 }
+
+.our-latest-project-card:hover .our-latest-project-img-style {
+    filter: grayscale(100%)
+}
+
+.our-latest-project-card:hover .our-latest-project-content {
+    background: #352F2D;
+}
+
+.our-latest-project-card:hover .our-latest-project-card-heading {
+    color: #FFFFFF;
+}
+
+.our-latest-project-card:hover .our-latest-project-card-text {
+    color: #C7B299;
+}
+
+.our-latest-project-card:hover .our-latest-project-card-trigon {
+    border-bottom: 10px solid #352F2D;
+}
+
 
 .our-latest-project-content {
     background: #FBFAF8;
     padding-top: 26px;
     padding-left: 23px;
     padding-bottom: 26px;
-}
-
-.our-latest-project-content:hover {
-    background: #352F2D;
 }
 
 .our-latest-project-card-heading {
@@ -539,20 +610,12 @@ ul {
     margin-top: 20px;
 }
 
-.our-latest-project-card-heading:hover {
-    color: #FFFFFF;
-}
-
 .our-latest-project-card-text {
     font-family: "Montserrat";
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #D1D1D1;
-}
-
-.our-latest-project-card-text:hover {
-    color: #C7B299;
 }
 
 .our-latest-project-card-trigon {
@@ -563,9 +626,6 @@ ul {
     margin-left: 14px;
 }
 
-.our-latest-project-card-trigon:hover {
-    border-bottom: 10px solid #352F2D;
-}
 
 .our-latest-project-img {
     position: relative;
@@ -591,7 +651,13 @@ ul {
     border-radius: 3px;
     border: none;
     display: inline-block;
+    transition-delay: 0.3s;
 }
+
+.our-latest-project-button:hover {
+    animation: button-animation 1.5s both;
+}
+
 
 /*video-presentation*/
 .video-presentation {
@@ -815,10 +881,35 @@ ul {
     box-sizing: border-box;
     margin-right: 80px;
     margin-bottom: 54px;
+    transition: 0.3s;
+}
+
+.recent-posts-card:hover .recent-posts-card-img-style {
+    filter: brightness(40%);
+}
+
+.recent-posts-card:hover .recent-posts-card-img-svg-style-top {
+    fill: #C7B199;
+}
+
+.recent-posts-card:hover .recent-posts-card-img-svg-style-bottom {
+    fill: #A48D71;
+}
+
+.recent-posts-card:hover {
+    background-color: #352F2D;
+}
+
+.recent-posts-card:hover .recent-posts-card-heading {
+    color: #C7B299;
 }
 
 .recent-posts-card-main {
     padding: 31px 36px 23px 23px;
+}
+
+.recent-posts-card:hover .recent-posts-card-text {
+    color: #FFFFFF;
 }
 
 .recent-posts-card-heading {
@@ -851,7 +942,7 @@ ul {
     fill: #D1D1D1;
 }
 
-.recent-posts-bottom-svg-style:hover {
+.recent-posts-bottom-svg:hover .recent-posts-bottom-svg-style {
     fill: #C7B299;
 }
 
@@ -863,6 +954,7 @@ ul {
 
 .recent-posts-bottom-svg {
     padding-right: 20px;
+    transition: 0.3s;
 }
 
 /*partners*/
@@ -920,6 +1012,17 @@ ul {
 .footer-top-about-us {
     width: 25%;
     margin-right: 72px;
+    transition-delay: 0.3s;
+}
+
+.footer-top-about-us:hover .footer-top-about-us-main-text {
+    color: #C7B299;
+}
+
+.footer-top-about-us:hover .footer-top-about-us-link-text,
+.footer-top-about-us:hover .footer-top-about-us-link-icon-style {
+    color: #0069f3;
+    fill: #0069f3;
 }
 
 .footer-top-about-us-logo {
@@ -999,7 +1102,11 @@ ul {
     line-height: 17px;
     color: #555555;
     width: 206px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-top-recent-posts-main {
+    transition-delay: 0.3s;
 }
 
 .footer-top-recent-posts-main-line {
@@ -1007,6 +1114,34 @@ ul {
     height: 1px;
     border: none;
     margin-bottom: 12px;
+}
+
+.footer-top-recent-posts-main:hover .footer-top-recent-posts-date {
+    color: #FFFFFF;
+}
+
+.footer-top-recent-posts-main:hover .footer-top-recent-posts-text {
+    color: #C7B299;
+}
+
+.footer-top-twitter-main {
+    transition-delay: 0.3s;
+}
+
+.footer-top-twitter-main:hover .footer-top-twitter-text {
+    color: #C7B299;
+}
+
+.footer-top-twitter-main:hover .footer-top-twitter-time {
+    color: #FFFFFF;
+}
+
+.footer-top-twitter-main:hover .footer-top-twitter-text-style {
+    color: #0069f3;
+}
+
+.footer-top-twitter-main:hover .footer-top-twitter-text-style-third {
+    color: #c2a1a1;
 }
 
 .footer-top-twitter-text {
@@ -1028,7 +1163,7 @@ ul {
     font-size: 12px;
     line-height: 15px;
     color: #363636;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .footer-top-twitter-main-line {
@@ -1051,6 +1186,11 @@ ul {
     margin: 0 5px 5px 0;
 }
 
+.footer-top-widget-img-style:hover {
+    transform: scale(1.05);
+}
+
+
 .footer-bottom-card-copy-text,
 .footer-bottom-card-link-style {
     font-family: "Montserrat";
@@ -1058,6 +1198,10 @@ ul {
     font-size: 13px;
     line-height: 16px;
     color: #555555;
+}
+
+.footer-bottom-card-link-style:hover {
+    color: #BAA78F;
 }
 
 .footer-bottom-card-copy,
