@@ -122,6 +122,10 @@ body {
     font-weight: 400;
 }
 
+.menu {
+    display: flex;
+}
+
 .nav-links {
     align-items: center;
     justify-items: center;
@@ -1321,14 +1325,17 @@ ul {
     margin-right: 11px;
 }
 
+/* */
+
 .burger {
     display: none;
 }
 
+/* */
 
 /*adaptive*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1248px) {
     .header {
         padding: 39px 30px 49px 30px;
     }
@@ -1508,13 +1515,25 @@ ul {
     .waxom-is-realization {
         padding-bottom: 0;
     }
+
+    .slogan-style-second {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .partners-contain {
+        justify-content: center;
+    }
+
+    .partners-contain-link {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 680px) {
 
     .header,
     .services,
-    .waxom-is-realization,
     .purchase-now,
     .our-latest-project,
     .video-presentation,
@@ -1524,6 +1543,10 @@ ul {
     .partners,
     .footer {
         padding: 20px 10px;
+    }
+
+    .waxom-is-realization {
+        padding: 20px 0;
     }
 
     .slider-left,
@@ -1777,6 +1800,72 @@ ul {
 
     .partners-contain {
         justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .burger {
+        display: block;
+        top: 35px;
+        right: 15px;
+        position: absolute;
+        background-color: #988574;
+        color: #FFFFFF;
+        border: 2px solid #988574;
+        border-radius: 3px;
+    }
+
+    .nav-links,
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-links-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .menu {
+        background-color: #988574;
+        position: fixed;
+        top: 55px;
+        right: 15px;
+        padding: 5px;
+        display: none;
+        border-radius: 5px;
+    }
+
+    .menu-open {
+        display: block;
+    }
+
+    .nav-list {
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
+    }
+
+    .nav-links-style {
+        padding-right: 0;
+        line-height: 25px;
+    }
+
+    .nav-link:hover {
+        background-color: #ffffffed;
+    }
+
+    .nav-links-list {
+        align-items: flex-end;
+    }
+
+    .nav-links-list {
+        margin: 0;
     }
 }
 
