@@ -234,34 +234,27 @@ a {
 
     0%,
     100% {
-        -webkit-transform: translateX(0%);
         transform: translateX(0%);
-        -webkit-transform-origin: 50% 50%;
         transform-origin: 50% 50%;
     }
 
     15% {
-        -webkit-transform: translateX(-30px) rotate(-6deg);
         transform: translateX(-30px) rotate(-6deg);
     }
 
     30% {
-        -webkit-transform: translateX(15px) rotate(6deg);
         transform: translateX(15px) rotate(6deg);
     }
 
     45% {
-        -webkit-transform: translateX(-15px) rotate(-3.6deg);
         transform: translateX(-15px) rotate(-3.6deg);
     }
 
     60% {
-        -webkit-transform: translateX(9px) rotate(2.4deg);
         transform: translateX(9px) rotate(2.4deg);
     }
 
     75% {
-        -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
     }
 }
@@ -369,7 +362,7 @@ ul {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .services-card:hover .services-card-figure-style,
@@ -484,7 +477,7 @@ ul {
     margin: 0;
     justify-content: center;
     max-width: 100%;
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .waxom-is-realization-bottom img:hover {
@@ -645,7 +638,7 @@ ul {
 
 .our-latest-project-card {
     margin-bottom: 69px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .our-latest-project-card:hover .our-latest-project-img-style {
@@ -907,7 +900,7 @@ ul {
 
 .recent-posts {
     background-color: #fff;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 38px;
 }
 
@@ -1065,8 +1058,9 @@ ul {
     align-items: center;
 }
 
-.partners-contain-img:hover {
-    animation: partners-contain-img-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.partners-contain-img:hover,
+.video-presentation-icon:hover {
+    animation: partners-contain-img-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes partners-contain-img-center {
@@ -1121,7 +1115,7 @@ ul {
 .footer-top-about-us {
     width: 25%;
     margin-right: 72px;
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .footer-top-about-us:hover .footer-top-about-us-main-text {
@@ -1215,7 +1209,7 @@ ul {
 }
 
 .footer-top-recent-posts-main {
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .footer-top-recent-posts-main-line {
@@ -1234,7 +1228,7 @@ ul {
 }
 
 .footer-top-twitter-main {
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .footer-top-twitter-main:hover .footer-top-twitter-text {
@@ -1293,10 +1287,11 @@ ul {
 
 .footer-top-widget-img-style {
     margin: 0 5px 5px 0;
+    transition: 0.4s;
 }
 
 .footer-top-widget-img-style:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .footer-bottom-card-copy-text,
@@ -1515,7 +1510,7 @@ ul {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 680px) {
 
     .header,
     .services,
@@ -1528,7 +1523,7 @@ ul {
     .recent-posts,
     .partners,
     .footer {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .slider-left,
@@ -1538,10 +1533,6 @@ ul {
 
     .services-contain {
         flex-wrap: wrap;
-    }
-
-    .waxom-is-realization-text {
-        width: none;
     }
 
     .nav-links {
@@ -1605,143 +1596,205 @@ ul {
         margin-bottom: 19px;
     }
 
-.header-slider-ellipse {
-    transform: scale(0.7);
-    margin-bottom: 29px;
+    .header-slider-ellipse {
+        transform: scale(0.7);
+        margin-bottom: 29px;
+    }
+
+    .services-card {
+        margin-right: 0;
+    }
+
+    .waxom-is-realization-heading {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .waxom-is-realization-bottom {
+        flex-direction: column;
+    }
+
+    .waxom-is-realization-bottom-left,
+    .waxom-is-realization-bottom-right {
+        position: static;
+        width: 100%;
+    }
+
+    .purchase-now-contain {
+        flex-direction: column;
+    }
+
+    .purchase-now-heading {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0;
+        line-height: 25px;
+    }
+
+    .waxom-is-realization {
+        padding-bottom: 0;
+    }
+
+    .purchase-now-text {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .purchase-now-bottom {
+        transform: scale(0.7);
+        text-align: center;
+    }
+
+    .our-latest-project-heading-name {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .our-latest-project-style {
+        margin: 10px;
+    }
+
+    .our-latest-project-category {
+        margin-bottom: 27px;
+    }
+
+    .our-latest-project-card {
+        margin-bottom: 27px;
+    }
+
+    .our-latest-project-all-projects {
+        margin-bottom: 0;
+    }
+
+    .our-latest-project-button {
+        transform: scale(0.8);
+    }
+
+    .our-latest-project-bottom {
+        margin-bottom: 17px;
+    }
+
+    .video-presentation-heading {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .video-presentation-text {
+        font-size: 13px;
+    }
+
+    .mobile-devices-heading {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .mobile-devices-list-style,
+    .mobile-devices-text {
+        font-size: 13px;
+    }
+
+    .mobile-devices-text {
+        margin-bottom: 19px;
+    }
+
+    .counters-card {
+        margin-bottom: 39px;
+    }
+
+    .recent-posts-heading {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .recent-posts-text {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .recent-posts-card {
+        width: 100%;
+    }
+
+    .partners-contain {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-devices-contain {
+        padding-top: 0;
+    }
+
+    .footer-top {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer-contain-top {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-top-about-us,
+    .footer-top-recent-posts,
+    .footer-top-twitter,
+    .footer-top-widget {
+        width: 100%;
+    }
+
+    .footer-contain-top {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .footer-top-about-us {
+        transform: scale(1);
+        margin-right: 0px;
+    }
+
+    .footer-contain-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners-contain-link {
+        margin-bottom: 30px;
+    }
+
+    .services-card {
+        margin-bottom: 35px;
+    }
+
+    .footer-bottom {
+        padding: 30px 0;
+    }
+
+    .partners-contain {
+        justify-content: center;
+    }
 }
 
-.services-card {
-    margin-right: 0;
-}
+@media (max-width: 320px) {
+    .logo {
+        transform: scale(0.7);
+    }
 
-.waxom-is-realization-heading {
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-}
+    .header-contain {
+        width: 100%;
+    }
 
-.waxom-is-realization-bottom {
-    flex-direction: column;
-}
+    .our-latest-project-card {
+        transform: scale(0.8);
+        margin-bottom: 0;
+    }
 
-.waxom-is-realization-bottom-left,
-.waxom-is-realization-bottom-right {
-    position: static;
-    width: 100%;
+    .partners-contain {
+        margin: 0;
+    }
 }
-
-.purchase-now-contain {
-    flex-direction: column;
-}
-
-.purchase-now-heading {
-    font-size: 15px;
-    text-align: center;
-    margin-bottom: 0;
-    line-height: 25px;
-}
-
-.waxom-is-realization {
-    padding-bottom: 0;
-}
-.purchase-now-text {
-    font-size: 13px;
-    text-align: center;
-}
-.purchase-now-bottom {
-    transform: scale(0.7);
-    text-align: center;
-}
-.our-latest-project-heading-name {
-    font-size: 25px;
-    line-height: 30px;
-}
-.our-latest-project-style {
-    margin: 10px;
-}
-.our-latest-project-category {
-    margin-bottom: 27px;
-}
-.our-latest-project-card {
-    margin-bottom: 27px;
-}
-.our-latest-project-all-projects {
-    margin-bottom: 0;
-}
-.our-latest-project-button {
-    transform: scale(0.8);
-}
-.our-latest-project-bottom {
-    margin-bottom: 17px;
-}
-.video-presentation-heading {
-    text-align: center;
-    font-size: 20px;
-}
-.video-presentation-text {
-    font-size: 13px;
-}
-.mobile-devices-heading {
-    text-align: center;
-    font-size: 20px;
-}
-.mobile-devices-list-style, .mobile-devices-text {
-    font-size: 13px;
-}
-.mobile-devices-text {
-    margin-bottom: 19px;
-}
-.counters-card {
-    margin-bottom: 39px;
-}
-.recent-posts-heading {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.recent-posts-text {
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-.recent-posts-card {
-    width: 100%;
-}
-.partners-contain {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.mobile-devices-contain {
-    padding-top: 0;
-}
-.footer-top {
-    padding: 0;margin: 0;
-}
-.footer {
-    padding: 0;
-}
-.footer-contain-top {
-    flex-direction: column;
-    justify-content: center;
-}
-.footer-top-about-us, .footer-top-recent-posts, .footer-top-twitter, .footer-top-widget {
-    width: 100%;
-}
-.footer-contain-top {
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 30px;
-}
-.footer-top-about-us {
-    transform: scale(1); 
-    margin-right: 0px;
-}
-.footer-contain-bottom {
-    flex-direction: column;
-    align-items: center;
-}
-.partners-contain-link {
-    margin-bottom: 30px;
-}
-.services-card {margin-bottom: 35px;}
-}
-
