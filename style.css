@@ -61,6 +61,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -83,6 +84,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-between;
+    max-width: 1600px;
 }
 
 .header-contain {
@@ -90,13 +92,14 @@ body {
     flex-wrap: nowrap;
     flex-direction: column;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
 }
 
 .header-heading {
     display: flex;
     justify-content: space-between;
     margin-bottom: 250px;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -196,7 +199,7 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    width: 563px;
+    max-width: 563px;
     text-align: center;
     margin-bottom: 39px;
 }
@@ -261,6 +264,7 @@ a {
     justify-content: center;
 }
 
+/*
 .header-slider-ellipse-style {
     padding-right: 7px;
     transition-delay: 0.1s;
@@ -281,6 +285,28 @@ a {
 
 .header-slider-ellipse-style:hover .header-slider-circle-style {
     fill: none;
+}
+*/
+.header-slider-ellipse-button,
+.header-slider-ellipse-button:active {
+    display: block;
+    margin: 0 10px 0 0;
+    width: 11px;
+    height: 11px;
+    opacity: 0.5;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: 0.1s;
+}
+
+.header-slider-ellipse-button:hover {
+    transform: scale(1.4);
+    border: 1px solid #d3c1ad;
+    background-color: transparent;
+    opacity: 1;
+    box-sizing: border-box;
 }
 
 
@@ -320,7 +346,7 @@ ul {
 
 .services-contain {
     display: flex;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     align-items: center;
     flex-wrap: nowrap;
@@ -396,7 +422,7 @@ ul {
 }
 
 .waxom-is-realization-contain {
-    width: 1234px;
+    max-width: 1234px;
     margin: 0 auto;
 }
 
@@ -425,9 +451,10 @@ ul {
     text-align: center;
     color: #8C8C8C;
     margin-bottom: 42px;
-    width: 770px;
+    max-width: 770px;
 }
 
+/*
 .waxom-is-realization-bottom {
     background-image: url(img/browsers.png);
     height: 483px;
@@ -435,6 +462,39 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
 }
+*/
+.waxom-is-realization-bottom {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    transition-delay: 0.3s;
+}
+
+.waxom-is-realization-bottom img:hover {
+    z-index: 4;
+}
+
+.waxom-is-realization-bottom-left {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.waxom-is-realization-bottom-center {
+    z-index: 3;
+    position: relative;
+}
+
+.waxom-is-realization-bottom-right {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+
 
 /*purchase-now*/
 .purchase-now {
@@ -445,7 +505,7 @@ ul {
 }
 
 .purchase-now-contain {
-    width: 1234px;
+    max-width: 1234px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
@@ -499,7 +559,7 @@ ul {
 }
 
 .our-latest-project-contain {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -526,7 +586,7 @@ ul {
     line-height: 20px;
     text-align: center;
     color: #8C8C8C;
-    width: 802px;
+    max-width: 802px;
     align-items: center;
     margin-bottom: 27px;
 }
@@ -674,6 +734,7 @@ ul {
     padding-top: 248px;
     padding-bottom: 195px;
     margin: 0 auto;
+    max-width: 100%;
 
 }
 
@@ -698,7 +759,7 @@ ul {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    width: 570px;
+    max-width: 570px;
     text-align: center;
 }
 
@@ -717,7 +778,7 @@ ul {
 }
 
 .mobile-devices-contain {
-    width: 1160px;
+    max-width: 1160px;
     display: flex;
     padding-top: 78px;
     margin: 0 auto;
@@ -727,6 +788,10 @@ ul {
     margin-right: 64px;
 }
 
+.mobile-devices-img-style {
+    display: block;
+}
+
 .mobile-devices-heading {
     font-family: "Raleway";
     font-weight: 600;
@@ -734,10 +799,11 @@ ul {
     line-height: 35px;
     color: #555555;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .mobile-devices-text {
-    width: 670px;
+    width: 100%;
     font-family: "Montserrat";
     font-weight: 300;
     font-size: 16px;
@@ -747,8 +813,7 @@ ul {
 }
 
 .mobile-devices-list {
-    width: 578px;
-
+    width: 100%;
     margin-left: 65px;
 }
 
@@ -781,9 +846,10 @@ ul {
 
 .counters-contain {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     margin: 0 auto;
+    width: 60%;
 }
 
 .counters-svg {
@@ -818,10 +884,6 @@ ul {
     color: #C7B299;
 }
 
-.counters-card {
-    padding-right: 70px;
-}
-
 /*recent-posts*/
 .recent-posts {
     background-color: #fff;
@@ -830,7 +892,7 @@ ul {
 }
 
 .recent-posts-contain {
-    width: 1278px;
+    max-width: 1278px;
     margin: 0 auto;
 }
 
@@ -858,12 +920,13 @@ ul {
     text-align: center;
     color: #8C8C8C;
     margin-bottom: 30px;
-    width: 770px;
+    max-width: 770px;
 }
 
 .recent-posts-main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .recent-posts-card-img {
@@ -879,9 +942,13 @@ ul {
 .recent-posts-card {
     border: 1px solid #B3B3B3;
     box-sizing: border-box;
-    margin-right: 80px;
     margin-bottom: 54px;
     transition: 0.3s;
+    width: 30%;
+}
+
+.recent-posts-card-img-style {
+    width: 100%;
 }
 
 .recent-posts-card:hover .recent-posts-card-img-style {
@@ -970,12 +1037,32 @@ ul {
 }
 
 .partners-contain {
-    width: 1065px;
+    max-width: 1065px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.partners-contain-img:hover {
+    animation: partners-contain-img-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes partners-contain-img-center {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.partners-contain-link {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 /*footer*/
 .footer-top {
@@ -991,14 +1078,14 @@ ul {
 }
 
 .footer-contain-top {
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .footer-contain-bottom {
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     display: flex;
 }
@@ -1092,7 +1179,7 @@ ul {
     line-height: 15px;
     color: #363636;
     margin-bottom: 6px;
-    width: 206px;
+    max-width: 206px;
 }
 
 .footer-top-recent-posts-text {
@@ -1101,7 +1188,7 @@ ul {
     font-size: 14px;
     line-height: 17px;
     color: #555555;
-    width: 206px;
+    max-width: 206px;
     padding-bottom: 16px;
 }
 
@@ -1216,4 +1303,164 @@ ul {
     border: none;
     width: 1px;
     margin-right: 11px;
+}
+
+.burger {
+    display: none;
+}
+
+/*adaptive*/
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 39px 30px 49px 30px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-links-list {
+        margin-right: 150px;
+    }
+
+    .icon-cart,
+    .icon-search {
+        margin-top: -100px;
+    }
+
+    .header-heading {
+        margin-bottom: 150px;
+    }
+
+    .slogan-style-button {
+        margin-bottom: 200px;
+    }
+
+    .services {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .services-card {
+        margin-right: 15px;
+    }
+
+    .waxom-is-realization {
+        padding-top: 30px;
+    }
+
+    .purchase-now {
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+
+    .our-latest-project {
+        padding-top: 30px;
+    }
+
+    .our-latest-project-all-projects {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .video-presentation-contain {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mobile-devices-contain {
+        padding-top: 30px;
+    }
+
+    .mobile-devices-content {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .mobile-devices-list {
+        margin: 0;
+    }
+
+    .recent-posts {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .recent-posts-main {
+        padding: 10px
+    }
+
+    .recent-posts-card {
+        margin: 10px auto;
+        width: 48%;
+    }
+
+    .partners {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .partners-contain-link {
+        transform: scale(0.9);
+    }
+
+    .footer-top {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .footer-top-about-us {
+        transform: scale(0.9);
+        margin-right: 30px;
+    }
+
+    .footer-top-widget {
+        width: 100%;
+    }
+
+    .footer-top-widget-heading {
+        text-align: center;
+    }
+
+    .footer-top-widget-img {
+        justify-content: center;
+    }
+
+    .footer-contain-bottom {
+        justify-content: center;
+    }
+
+    .footer-contain-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .header,
+    .services,
+    .waxom-is-realization,
+    .purchase-now,
+    .our-latest-project,
+    .video-presentation,
+    .mobile-devices,
+    .counters,
+    .recent-posts,
+    .partners,
+    .footer {
+        padding: 10px;
+    }
+
+    .slider-left,
+    .slider-right {
+        display: none;
+    }
+
+    .services-contain {
+        flex-wrap: wrap;
+    }
+
+    .waxom-is-realization-text {
+        width: none;
+    }
 }
