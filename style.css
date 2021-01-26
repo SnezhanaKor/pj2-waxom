@@ -1459,7 +1459,30 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1015px) {
+    .icon-cart {
+        position: absolute;
+        margin: 0;
+        top: 40px;
+        right: 100px;
+    }
+
+    .icon-search {
+        margin: 0;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    .nav-links-list {
+        margin: 0;
+    }
+
+    .partners-contain {
+        flex-wrap: wrap;
+    }
+
+    /**/
     .slider-left {
         display: none;
     }
@@ -1474,15 +1497,6 @@ ul {
 
     .nav-links {
         flex-wrap: wrap;
-    }
-
-    .icon-cart {
-        margin-left: 500px;
-    }
-
-    .icon-cart,
-    .icon-search {
-        margin-top: -150px;
     }
 
     .waxom-is-realization-bottom {
@@ -1528,362 +1542,361 @@ ul {
     .partners-contain-link {
         margin-bottom: 20px;
     }
-}
-
-@media (max-width: 680px) {
-
-    .header,
-    .services,
-    .purchase-now,
-    .our-latest-project,
-    .video-presentation,
-    .mobile-devices,
-    .counters,
-    .recent-posts,
-    .partners,
-    .footer {
-        padding: 20px 10px;
-    }
-
-    .waxom-is-realization {
-        padding: 20px 0;
-    }
-
-    .slider-left,
-    .slider-right {
-        display: none;
-    }
-
-    .services-contain {
-        flex-wrap: wrap;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: -70px;
-    }
-
-    .nav-links-list {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-    .icon-cart,
-    .icon-search {
-        display: none;
-    }
-
-    .nav-links-list {
-        align-items: flex-start;
-    }
-
-    .counters-contain {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile-devices-img-style {
-        display: none;
-    }
-
-    .mobile-devices-img {
-        margin: 0;
-    }
-
-    .header-heading {
-        margin-bottom: 10px;
-    }
-
-    .slogan-style-first {
-        font-size: 20px;
-    }
-
-    .slogan-style-second {
-        font-size: 25px;
-        line-height: 30px;
-        margin-bottom: 10px;
-    }
-
-    .slogan-style-third {
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 15px;
-        margin-bottom: 39px;
-    }
-
-    .slogan-style-button {
-        transform: scale(0.7);
-        margin-bottom: 19px;
-    }
-
-    .header-slider-ellipse {
-        transform: scale(0.7);
-        margin-bottom: 29px;
-    }
-
-    .services-card {
-        margin-right: 0;
-    }
-
-    .waxom-is-realization-heading {
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-    }
-
-    .waxom-is-realization-bottom {
-        flex-direction: column;
-    }
-
-    .waxom-is-realization-bottom-left,
-    .waxom-is-realization-bottom-right {
-        position: static;
-        width: 100%;
-    }
-
-    .purchase-now-contain {
-        flex-direction: column;
-    }
-
-    .purchase-now-heading {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 0;
-        line-height: 25px;
-    }
-
-    .waxom-is-realization {
-        padding-bottom: 0;
-    }
-
-    .purchase-now-text {
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .purchase-now-bottom {
-        transform: scale(0.7);
-        text-align: center;
-    }
-
-    .our-latest-project-heading-name {
-        font-size: 25px;
-        line-height: 30px;
-    }
-
-    .our-latest-project-style {
-        margin: 10px;
-    }
-
-    .our-latest-project-category {
-        margin-bottom: 27px;
-    }
-
-    .our-latest-project-card {
-        margin-bottom: 27px;
-    }
-
-    .our-latest-project-all-projects {
-        margin-bottom: 0;
-    }
-
-    .our-latest-project-button {
-        transform: scale(0.8);
-    }
-
-    .our-latest-project-bottom {
-        margin-bottom: 17px;
-    }
-
-    .video-presentation-heading {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .video-presentation-text {
-        font-size: 13px;
-    }
-
-    .mobile-devices-heading {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .mobile-devices-list-style,
-    .mobile-devices-text {
-        font-size: 13px;
-    }
-
-    .mobile-devices-text {
-        margin-bottom: 19px;
-    }
-
-    .counters-card {
-        margin-bottom: 39px;
-    }
-
-    .recent-posts-heading {
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .recent-posts-text {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-    .recent-posts-card {
-        width: 100%;
-    }
-
-    .partners-contain {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .mobile-devices-contain {
-        padding-top: 0;
-    }
-
-    .footer-top {
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer {
-        padding: 0;
-    }
-
-    .footer-contain-top {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer-top-about-us,
-    .footer-top-recent-posts,
-    .footer-top-twitter,
-    .footer-top-widget {
-        width: 100%;
-    }
-
-    .footer-contain-top {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 30px;
-    }
-
-    .footer-top-about-us {
-        transform: scale(1);
-        margin-right: 0px;
-    }
-
-    .footer-contain-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .partners-contain-link {
-        margin-bottom: 30px;
-    }
-
-    .services-card {
-        margin-bottom: 35px;
-    }
-
-    .footer-bottom {
-        padding: 30px 0;
-    }
-
-    .partners-contain {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 550px) {
-    .burger {
-        display: block;
-        top: 35px;
-        right: 15px;
-        position: absolute;
-        background-color: #988574;
-        color: #FFFFFF;
-        border: 2px solid #988574;
-        border-radius: 3px;
-    }
-
-    .nav-links,
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .nav-links-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        margin-right: 30px;
-    }
-
-    .menu {
-        background-color: #988574;
-        position: fixed;
-        top: 55px;
-        right: 15px;
-        padding: 5px;
-        display: none;
-        border-radius: 5px;
-    }
-
-    .menu-open {
-        display: block;
-    }
-
-    .nav-list {
-        display: block;
-    }
-
-    .nav-link {
-        display: block;
-    }
-
-    .nav-links-style {
-        padding-right: 0;
-        line-height: 25px;
-    }
-
-    .nav-link:hover {
-        background-color: #ffffffed;
-    }
-
-    .nav-links-list {
-        align-items: flex-end;
-    }
-
-    .nav-links-list {
-        margin: 0;
-    }
-}
-
-@media (max-width: 320px) {
-    .logo {
-        transform: scale(0.7);
-    }
-
-    .header-contain {
-        width: 100%;
-    }
-
-    .our-latest-project-card {
-        transform: scale(0.8);
-        margin-bottom: 0;
-    }
 
-    .partners-contain {
-        margin: 0;
+    @media (max-width: 680px) {
+
+        .header,
+        .services,
+        .purchase-now,
+        .our-latest-project,
+        .video-presentation,
+        .mobile-devices,
+        .counters,
+        .recent-posts,
+        .partners,
+        .footer {
+            padding: 20px 10px;
+        }
+
+        .waxom-is-realization {
+            padding: 20px 0;
+        }
+
+        .slider-left,
+        .slider-right {
+            display: none;
+        }
+
+        .services-contain {
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: -70px;
+        }
+
+        .nav-links-list {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+        .icon-cart,
+        .icon-search {
+            display: none;
+        }
+
+        .nav-links-list {
+            align-items: flex-start;
+        }
+
+        .counters-contain {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-devices-img-style {
+            display: none;
+        }
+
+        .mobile-devices-img {
+            margin: 0;
+        }
+
+        .header-heading {
+            margin-bottom: 10px;
+        }
+
+        .slogan-style-first {
+            font-size: 20px;
+        }
+
+        .slogan-style-second {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .slogan-style-third {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 15px;
+            margin-bottom: 39px;
+        }
+
+        .slogan-style-button {
+            transform: scale(0.7);
+            margin-bottom: 19px;
+        }
+
+        .header-slider-ellipse {
+            transform: scale(0.7);
+            margin-bottom: 29px;
+        }
+
+        .services-card {
+            margin-right: 0;
+        }
+
+        .waxom-is-realization-heading {
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .waxom-is-realization-bottom {
+            flex-direction: column;
+        }
+
+        .waxom-is-realization-bottom-left,
+        .waxom-is-realization-bottom-right {
+            position: static;
+            width: 100%;
+        }
+
+        .purchase-now-contain {
+            flex-direction: column;
+        }
+
+        .purchase-now-heading {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 0;
+            line-height: 25px;
+        }
+
+        .waxom-is-realization {
+            padding-bottom: 0;
+        }
+
+        .purchase-now-text {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .purchase-now-bottom {
+            transform: scale(0.7);
+            text-align: center;
+        }
+
+        .our-latest-project-heading-name {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .our-latest-project-style {
+            margin: 10px;
+        }
+
+        .our-latest-project-category {
+            margin-bottom: 27px;
+        }
+
+        .our-latest-project-card {
+            margin-bottom: 27px;
+        }
+
+        .our-latest-project-all-projects {
+            margin-bottom: 0;
+        }
+
+        .our-latest-project-button {
+            transform: scale(0.8);
+        }
+
+        .our-latest-project-bottom {
+            margin-bottom: 17px;
+        }
+
+        .video-presentation-heading {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .video-presentation-text {
+            font-size: 13px;
+        }
+
+        .mobile-devices-heading {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .mobile-devices-list-style,
+        .mobile-devices-text {
+            font-size: 13px;
+        }
+
+        .mobile-devices-text {
+            margin-bottom: 19px;
+        }
+
+        .counters-card {
+            margin-bottom: 39px;
+        }
+
+        .recent-posts-heading {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recent-posts-text {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .recent-posts-card {
+            width: 100%;
+        }
+
+        .partners-contain {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .mobile-devices-contain {
+            padding-top: 0;
+        }
+
+        .footer-top {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer {
+            padding: 0;
+        }
+
+        .footer-contain-top {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer-top-about-us,
+        .footer-top-recent-posts,
+        .footer-top-twitter,
+        .footer-top-widget {
+            width: 100%;
+        }
+
+        .footer-contain-top {
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 30px;
+        }
+
+        .footer-top-about-us {
+            transform: scale(1);
+            margin-right: 0px;
+        }
+
+        .footer-contain-bottom {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .partners-contain-link {
+            margin-bottom: 30px;
+        }
+
+        .services-card {
+            margin-bottom: 35px;
+        }
+
+        .footer-bottom {
+            padding: 30px 0;
+        }
+
+        .partners-contain {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .burger {
+            display: block;
+            top: 35px;
+            right: 15px;
+            position: absolute;
+            background-color: #988574;
+            color: #FFFFFF;
+            border: 2px solid #988574;
+            border-radius: 3px;
+        }
+
+        .nav-links,
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-links-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin-right: 30px;
+        }
+
+        .menu {
+            background-color: #988574;
+            position: fixed;
+            top: 55px;
+            right: 15px;
+            padding: 5px;
+            display: none;
+            border-radius: 5px;
+        }
+
+        .menu-open {
+            display: block;
+        }
+
+        .nav-list {
+            display: block;
+        }
+
+        .nav-link {
+            display: block;
+        }
+
+        .nav-links-style {
+            padding-right: 0;
+            line-height: 25px;
+        }
+
+        .nav-link:hover {
+            background-color: #ffffffed;
+        }
+
+        .nav-links-list {
+            align-items: flex-end;
+        }
+
+        .nav-links-list {
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 386px) {
+        .logo {
+            transform: scale(0.7);
+        }
+
+        .header-contain {
+            width: 100%;
+        }
+
+        .our-latest-project-card {
+            transform: scale(0.8);
+            margin-bottom: 0;
+        }
+
+        .partners-contain {
+            margin: 0;
+        }
     }
-}
